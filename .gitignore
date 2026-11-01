@@ -1,2 +1,4 @@
 *.class
 ojdbc8.jar
+git 
+node_modules/

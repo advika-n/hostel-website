@@ -1,0 +1,13 @@
+{
+  "name": "hostel-desk-static",
+  "private": true,
+  "description": "Tooling for the static (sql.js) build of Hostel Desk in static/",
+  "scripts": {
+    "copy-sqljs": "node -e \"for (const f of ['sql-wasm.js','sql-wasm.wasm']) require('fs').copyFileSync('node_modules/sql.js/dist/'+f, 'static/'+f)\"",
+    "test": "node tests/static.test.js"
+  },
+  "devDependencies": {
+    "playwright": "^1.64.1",
+    "sql.js": "^1.15.2"
+  }
+}
